@@ -1,6 +1,6 @@
 # Laravel Registration Authorization
 ## Установка
-### Клонирование репозитори
+### Клонирование репозитории
     git clone https://github.com/altsgamer1/Laravel-Registration-Authorization.git
     cd Laravel-Registration-Authorization
 ### Загрузка зависимостей
@@ -8,7 +8,7 @@
 ### Настройки Laravel
     php -r "file_exists('.env') || copy('.env.example', '.env');"
     php artisan key:generate
-### Указать подключение MySQL
+### Подключение MySQL
 Задать свои значения DB_HOST, DB_DATABASE, DB_USERNAME, DB_PASSWORD в файле **/.env**
 ### Создание таблиц
     php artisan migrate
