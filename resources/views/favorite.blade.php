@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Contacts') }}</div>
+                <div class="card-header">{{ __('Favorites') }}</div>
 
                 <div class="card-body">
                     <table class="table">
@@ -15,21 +15,15 @@
                                 <th scope="col">Name</th>
                                 <th scope="col">Phone</th>
                                 <th scope="col">Email</th>
-                                <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($contacts as $contact)
+                            @foreach ($favorites as $favorite)
                             <tr>
-                                <th scope="row">{{ $contact['id'] }}</th>
-                                <td>{{ $contact['name'] }}</td>
-                                <td>{{ $contact['phone'] }}</td>
-                                <td>{{ $contact['email'] }}</td>
-                                <td>
-                                    <button class="btn btn-primary favorite" data-id="{{ $contact['id'] }}">
-                                        <i class="bi bi-star"></i>
-                                    </button>
-                                </td>
+                                <th scope="row">{{ $favorite->contact->id }}</th>
+                                <td>{{ $favorite->contact->name }}</td>
+                                <td>{{ $favorite->contact->phone }}</td>
+                                <td>{{ $favorite->contact->email }}</td>
                             </tr>
                             @endforeach
                         </tbody>
