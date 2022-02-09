@@ -2,6 +2,7 @@
 ## Установка
 ### Клонирование репозитори
     git clone https://github.com/altsgamer1/Laravel-Registration-Authorization.git
+    cd Laravel-Registration-Authorization
 ### Загрузка зависимостей
     composer install
 ### Настройки Laravel
