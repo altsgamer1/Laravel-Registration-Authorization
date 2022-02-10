@@ -15,7 +15,7 @@ Array.from(contacts).forEach(function(contact) {
 
         xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
-            alert('Контакт добавлен в избранное');
+            alert('Contact added to favorites');
         }};
 
         xhr.send('contact_id=' + id);
